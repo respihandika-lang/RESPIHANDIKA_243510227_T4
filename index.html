@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List Pro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Todo List Pro</h1>
+
+    <div class="input-group">
+      <input type="text" id="todo-input" placeholder="Masukkan tugas...">
+      <button onclick="addTodo()">Tambah</button>
+    </div>
+
+    <small id="error-message"></small>
+
+    <div class="filter-buttons">
+      <button onclick="setFilter('all')">All</button>
+      <button onclick="setFilter('active')">Active</button>
+      <button onclick="setFilter('completed')">Completed</button>
+    </div>
+
+    <ul id="todo-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
